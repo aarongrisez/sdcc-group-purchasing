@@ -1,4 +1,4 @@
-module sdcc-group-purchasing
+module github.com/aarongrisez/sdcc-group-purchasing 
 
 go 1.19
 
