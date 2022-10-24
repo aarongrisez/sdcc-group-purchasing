@@ -7,6 +7,7 @@ import (
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/aarongrisez/sdcc-group-purchasing/lib/dynamo"
 )
 
 // Response is of type APIGatewayProxyResponse since we're leveraging the
@@ -20,7 +21,7 @@ func Handler(ctx context.Context) (Response, error) {
 	var buf bytes.Buffer
 
 	body, err := json.Marshal(map[string]interface{}{
-		"message": "Okay so your other function also executed successfully!",
+		"message": test(),
 	})
 	if err != nil {
 		return Response{StatusCode: 404}, err
