@@ -7,7 +7,7 @@ import (
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
-	"github.com/aarongrisez/sdcc-group-purchasing/lib/dynamo"
+	"github.com/aarongrisez/sdcc-group-purchasing/lib"
 )
 
 // Response is of type APIGatewayProxyResponse since we're leveraging the
